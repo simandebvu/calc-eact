@@ -1,4 +1,4 @@
-# Calc-eat
+# Calc-eact
 
 <br />
 <p align="center">
@@ -24,7 +24,7 @@
 
 ## Table Of Contents
 
-- [Calc-eat](#calc-eat)
+- [Calc-eact](#calc-eact)
   - [Table Of Contents](#table-of-contents)
   - [Built With](#built-with)
   - [Usage](#usage)
