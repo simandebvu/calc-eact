@@ -1,0 +1,16 @@
+# Changelog
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased]
+
+## [1.0.0] - 2020-09-10
+### Added
+- Create React App used to initialize the project using instructions in the create-react-app-buildpack to deploy the app to Heroku
+- Removed Unnecessary files and assets created by create-react-app
+- Added prop-types and big.js using npm
+- Added Linting for Github actions
+- Added Changelog and Readme
+  
