@@ -13,4 +13,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added prop-types and big.js using npm
 - Added Linting for Github actions
 - Added Changelog and Readme
-  
+- Prepare the directory structure 
+- Implemented the App component 
+- Implemented the Display component 
+- Implemented the Button component 
+- Implemented the ButtonPanel component
