@@ -23,3 +23,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Styled the ButtonPanel component
 - Styled the Button component
 - Passed "color" and "wide" props to the Button
+
+### Fixed
+- `calcRow` height to be 100px
