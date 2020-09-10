@@ -77,7 +77,7 @@ To have this app on your pc, you need to:
  
 ## Live Demo 
 
-[Live Demo Link](#) :point_left:
+[Live Demo Link](https://calc-eact.herokuapp.com/) :point_left:
 
 
 ## Authors
