@@ -15,3 +15,57 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+#calcDisplay {
+  display: flex;
+  width: 700px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.display {
+  background: grey;
+  height: 100px;
+  font-weight: bold;
+  text-align: right;
+  color: white;
+  font-size: 25px;
+  margin-top: 15px;
+  width: 700px;
+  padding: 1px 5px 45px 1px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.answer {
+  font-size: 2.5em;
+  padding-bottom: 1.5em;
+}
+
+.button {
+  height: 100px;
+  border: 1px solid #999;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:hover {
+  box-shadow: 0 0 13px rgba(33, 33, 33, 0.2);
+}
+
+.button:active {
+  background-color: #777;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.calcRow {
+  display: flex;
+  height: 100px;
+  width: 700px;
+}

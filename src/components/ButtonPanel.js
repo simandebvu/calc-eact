@@ -1,39 +1,39 @@
 import React from 'react';
 import Button from './Button';
 
-const renderButton = i => <Button name={i} />;
+const renderButton = (i, w, c) => <Button name={i} wide={w} color={c} />;
 
 function ButtonPanel() {
   return (
     <div>
       <div className="calcRow">
-        {renderButton('AC')}
-        {renderButton('+/-')}
-        {renderButton('%')}
-        {renderButton('/')}
+        {renderButton('AC', false, '#e0e0e0')}
+        {renderButton('+/-', false, '#e0e0e0')}
+        {renderButton('%', false, '#e0e0e0')}
+        {renderButton('/', false)}
       </div>
       <div className="calcRow">
-        {renderButton('7')}
-        {renderButton('8')}
-        {renderButton('9')}
-        {renderButton('X')}
+        {renderButton('7', false, '#e0e0e0')}
+        {renderButton('8', false, '#e0e0e0')}
+        {renderButton('9', false, '#e0e0e0')}
+        {renderButton('X', false)}
       </div>
       <div className="calcRow">
-        {renderButton('4')}
-        {renderButton('5')}
-        {renderButton('6')}
-        {renderButton('-')}
+        {renderButton('4', false, '#e0e0e0')}
+        {renderButton('5', false, '#e0e0e0')}
+        {renderButton('6', false, '#e0e0e0')}
+        {renderButton('-', false)}
       </div>
       <div className="calcRow">
-        {renderButton('1')}
-        {renderButton('2')}
-        {renderButton('3')}
-        {renderButton('+')}
+        {renderButton('1', false, '#e0e0e0')}
+        {renderButton('2', false, '#e0e0e0')}
+        {renderButton('3', false, '#e0e0e0')}
+        {renderButton('+', false)}
       </div>
       <div className="calcRow">
-        {renderButton('0')}
-        {renderButton('.')}
-        {renderButton('=')}
+        {renderButton('0', true, '#e0e0e0')}
+        {renderButton('.', false, '#e0e0e0')}
+        {renderButton('=', false)}
       </div>
 
     </div>
