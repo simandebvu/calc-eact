@@ -31,3 +31,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 - `calcRow` height to be 100px
+- `mod` to retain value
