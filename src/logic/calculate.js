@@ -18,6 +18,14 @@ export default function calculate(data, buttonName) {
       }
       break;
     case mod:
+      if (data.total) {
+        return {
+          total: Big(data.total).div(Big('100')).toString(),
+          next: null,
+          operation: null,
+        };
+      }
+
       if (data.next && data.operation) {
         const result = Operate(data.total, data.next, data.operation);
         return {
