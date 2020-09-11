@@ -5,22 +5,23 @@ export default function operate(numberOne, numberTwo, operation) {
   const minus = '-';
   const times = 'X';
   const divide = '/';
-  const modulo = '%';
-  const mNumberOne = Big(numberOne);
-  const mNumberTwo = Big(numberTwo);
+  const mNumberOne = Big(numberOne || '0');
+  const mNumberTwo = Big(numberTwo || '0');
   switch (operation) {
     case plus:
-      return mNumberOne.plus(mNumberTwo);
+      return mNumberOne.plus(mNumberTwo).toString();
     case minus:
-      return mNumberOne.minus(mNumberTwo);
+      return mNumberOne.minus(mNumberTwo).toString();
     case times:
-      return mNumberOne.times(mNumberTwo);
+      return mNumberOne.times(mNumberTwo).toString();
     case divide:
-      return mNumberOne.div(mNumberTwo);
-    case modulo:
-      return mNumberOne.mod(mNumberTwo);
+      // eslint-disable-next-line eqeqeq
+      if (mNumberTwo == '0') {
+        return 'Cant divide by 0!';
+      }
+      return mNumberOne.div(mNumberTwo).toString();
 
     default:
-      throw new Error('Invalid Operation!');
+      throw new Error(`Invalid Operator: ${operation}`);
   }
 }
