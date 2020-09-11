@@ -1,9 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Button from './Button';
 
-const renderButton = (i, w, c) => <Button name={i} wide={w} color={c} />;
-
-function ButtonPanel() {
+function ButtonPanel(props) {
+  const { clickHandler } = props;
+  const handleClick = buttonName => clickHandler(buttonName);
+  // eslint-disable-next-line max-len
+  const renderButton = (i, w, c) => <Button name={i} wide={w} color={c} clickHandler={handleClick} />;
   return (
     <div>
       <div className="calcRow">
@@ -39,5 +42,9 @@ function ButtonPanel() {
     </div>
   );
 }
+
+ButtonPanel.propTypes = {
+  clickHandler: PropTypes.func.isRequired,
+};
 
 export default ButtonPanel;
