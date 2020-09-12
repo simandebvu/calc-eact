@@ -26,6 +26,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Logic Folder with `calculate` and `operate`
 - Used `big.js`
 - Import `Calculate` into `App`
+- Interaction
+- App Passes state as Props to ButtonPanel
 
 ### Fixed
 - `calcRow` height to be 100px
+- `mod` to retain value
